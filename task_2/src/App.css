@@ -1,0 +1,43 @@
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-card {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px; /* Пример уменьшения размера карточки */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+h3 {
+  background: linear-gradient(45deg, #ff6600, #ff00ff); /* Пример использования градиента */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.main-photo {
+  width: 80px; /* Пример уменьшения ширины изображения */
+  height: auto;
+  border-radius: 50%; /* Пример скругления краев для круглой картинки */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Пример добавления тени */
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-card:hover {
+  transform: rotate(10deg)  scale(0.9);
+}
+
