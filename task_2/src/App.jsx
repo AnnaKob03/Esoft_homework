@@ -8,6 +8,24 @@ import CardCompetencies from "./components/CardCompetencies.jsx";
 import CardContent from "./components/CardContent.jsx";
 import CardDescription from "./components/CardDescription.jsx";
 
+const myCompetencies = [
+    "Знание SQL и работа с PostgreSQL",
+    "Работа с библиотеками Python",
+    "Методологии управления проектами",
+    "Параллельное программирование"
+]
+const desiredCompetencies = [
+    "Знание css, доведенное до автоматизма",
+    "Знание и опыт работы с Django",
+    "Знание и опыт работы с React",
+    "Межличностное общение",
+    "Управление конфликтами",
+    "Технический английский",
+    "Эффективное планирование",
+    "Разработка на swift",
+    "Испанский язык",
+    "Итальянский язык"
+];
 
 function App() {
     return (
@@ -17,12 +35,15 @@ function App() {
                 title="Кобылкина Анна Андреевна"
             />
             <CardCompetencies title="Мои компетенции">
-                <CardDescription title="Знание SQL и работа с  PostgreSQ" />
-                <CardDescription title="Работа с библиотеками Python" />
-                <CardDescription title="Методологии управления проектами" description="Описание компетенции 3" />
-                <CardDescription title="Параллельное программирование" description="Описание компетенции 4" />
+                {myCompetencies.map((competency, index) => (
+                    <CardDescription key={index} title={competency} />
+                ))}
             </CardCompetencies>
-
+            <CardCompetencies title="Желаемые компетенции">
+                {desiredCompetencies.map((competency, index) => (
+                    <CardDescription key={index} title={competency} />
+                ))}
+            </CardCompetencies>
         </div>
     );
 }

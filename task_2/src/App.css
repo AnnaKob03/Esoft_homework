@@ -59,18 +59,24 @@ h4 {
 
 .card-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   place-items: center;
-
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .des-card {
   border: 2px solid #ccc;
   border-radius: 20px;
-  padding: 20px;
   margin: 10px;
   width: 200px;
-  text-align: center;
+  height: 100px;
+  display: flex; /* Используем flexbox */
+  justify-content: center; /* Выравниваем по горизонтали по центру */
+  align-items: center; /* Выравниваем по вертикали по центру */
 }
 
+h3 {
+  padding: 0;
+  margin: 0;
+}
