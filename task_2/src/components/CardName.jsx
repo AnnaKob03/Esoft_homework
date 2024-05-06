@@ -8,6 +8,7 @@ export const CardName = ({ image, title}) => {
             <CardImage image={image} />
             <CardContent title={title} />
         </div>
+
     );
 }
 export default CardName;

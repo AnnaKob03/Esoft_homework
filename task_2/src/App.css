@@ -1,26 +1,33 @@
 
 .App {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
   height: 100vh;
+  flex-direction: column; /*!!!*/
+  width: 100%;
 }
 
 .main-card {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   width: 200px; /* Пример уменьшения размера карточки */
   border: 2px solid #ccc;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
 
-h3 {
+h3, h2 {
   background: linear-gradient(45deg, #ff6600, #ff00ff); /* Пример использования градиента */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h4 {
+  background: linear-gradient(45deg, #ff00ff, #ff6600); /* Пример использования градиента */
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -39,5 +46,31 @@ h3 {
 
 .main-card:hover {
   transform: rotate(10deg)  scale(0.9);
+}
+
+
+.comp-card {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  place-items: center;
+
+}
+
+.des-card {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
 }
 
