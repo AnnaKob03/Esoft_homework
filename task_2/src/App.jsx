@@ -27,6 +27,7 @@ const desiredCompetencies = [
     "Итальянский язык"
 ];
 
+
 function App() {
     return (
         <div className="App">
